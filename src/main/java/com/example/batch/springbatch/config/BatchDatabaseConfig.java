@@ -15,8 +15,6 @@ public class BatchDatabaseConfig {
     public DataSource getBatchDatabase(){
 
         return DataSourceBuilder.create().build();
-
-
     }
 
 }
