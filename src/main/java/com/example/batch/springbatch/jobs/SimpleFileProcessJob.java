@@ -32,7 +32,7 @@ public class SimpleFileProcessJob extends DefaultBatchConfigurer {
     @Autowired
     SimpleFileWriter simpleFileWriter;
 
-    @Bean
+    @Bean(name = "fileProcessJob")
     public Job fileProcessJob(JobBuilderFactory jobBuilderFactory,
                               StepBuilderFactory stepBuilderFactory
 //                              ItemProcessor<UserDetails, UserDetails> userDetailsItemProcessor,
